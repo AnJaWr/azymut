@@ -1,7 +1,7 @@
 
 
   function verte(button) {
-    var card = button.parentElement.parentElement;
+    var card = button.parentElement;
     card.classList.toggle('do-flip');
   
     }
