@@ -41,10 +41,4 @@ containers.forEach(function (container) {
           });
       kontakt.classList.remove('show');
       console.log("hide overlay")
-    }
-
-
-      button.addEventListener('click', function () {
-          
-      });
-  
+    };
