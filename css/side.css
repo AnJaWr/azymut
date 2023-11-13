@@ -432,7 +432,9 @@ display: none;
   .circle{
   right:10px
   }
-  
+  .contact_info{
+    flex-wrap: wrap;
+  }
 }
 
 
