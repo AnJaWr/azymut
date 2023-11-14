@@ -167,7 +167,14 @@ margin: 7px 15px 7px 15px;
     width: 100%;
   }
 
-
+  .contact_button{
+    padding: 5px 10px 5px 10px;
+    color: white;
+    background-color: #1c8ddd;
+  }
+  .contact_button:hover{
+    background-color: #155786;
+  }
   /* ===========================nawigacja ============================*/
 
 
