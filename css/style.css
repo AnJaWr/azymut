@@ -258,7 +258,14 @@ width: 100%;
 flex-wrap: wrap;
 justify-content: flex-end;
 width: 40%;}
-
+.contact_button{
+  padding: 5px 10px 5px 10px;
+  color: white;
+  background-color: #1c8ddd;
+}
+.contact_button:hover{
+  background-color: #155786;
+}
 /*======================================= anim ======================================= */
 @keyframes pulsing {
     0% {
