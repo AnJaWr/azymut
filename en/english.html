@@ -28,14 +28,21 @@
             </a>
         </div>
     </div></div>
-<div id="overlay" class="overlay">
- <div class="contact" id="kontakt">  
-    <div class="close_container"><button  class="close_button" id="close_button" onclick="closeKontakt()">X</button></div>
-            <div class="logo_container"><a href="english.html" onclick="closeKontakt()"><img src="../assets/dima_l.png" alt="" srcset="" width="150px"> </a>   </div>
-            <div class="contact_item button_container"> 
-                <a class="menu_item" onclick="closeKontakt()" href="worker.html">For employees</a>
-                <a class="menu_item" onclick="closeKontakt()" href="employer.html">For employers</a> </div>
+
+
+
+    <div id="overlay" class="overlay">
+        <div class="contact" id="kontakt">
+            <div class="close_container"><button class="close_button" id="close_button"
+                    onclick="closeKontakt()">X</button></div>
+            <div class="logo_container"><a href="english.html" onclick="closeKontakt()"><img src="../assets/dima_l.png"
+                        alt="" srcset="" width="150px"> </a> </div>
+            <div class="contact_item button_container">
+                <a class="menu_item" onclick="closeKontakt()" href="worker.html">For workers</a>
+                <a class="menu_item" onclick="closeKontakt()" href="employer.html">For employer</a>
+            </div>
             <div class="contact_item">
+           
                 <h4>About us</h4>
                 <p>We love and respect the law!</p>
                 <p>We are successful!</p>
@@ -46,24 +53,74 @@
                     With us the legalization process will be convenient and simple.</p>
                 <p>
                     Everyone makes promises, but we keep our promises.</p>
-                <hr>
+                <hr width="70%">
             </div>
             <div class="contact_item contact_info">
-               
+        
                 <div>
-                  <h4>Contact</h4>   
-                    <p class="protected-content" data-content="moc.liamg@cod.htuzimazah.olleh"></p>
-                    <p class="protected-content" data-content="11118708784+"></p>
+                    <h4>Contact</h4>
+                    <p class="protected-content" data-content="moc.liamg@cod.htuzimazah.olleh"
+                        style="margin-bottom:10px"></p>
+                    <p class="protected-content" data-content="11118708784+" style="margin-bottom:10px"></p>
+                    <div class="contact_button" onclick="showForm()">Contact form</div>
                 </div>
                 <div class="contact_socialmedia">
-
-                    <div><a href="https://www.facebook.com/groups/azimutdoc"><img src="assets/fb.svg" alt=""
-                        srcset=""></a></div>
-                    <div><a href="https://www.instagram.com/azimuthdoc/"><img src="assets/insta.svg" alt=""
-                            srcset=""></a></div>
+        
+                    <div><a href="https://www.facebook.com/groups/azimutdoc"><img src="../assets/fb.svg" alt=""
+                                srcset=""></a></div>
+                    <div><a href="https://www.instagram.com/azimuthdoc/"><img src="../assets/insta.svg" alt=""
+                                srcset=""></a></div>
                 </div>
             </div>
-        </div></div>
+        </div>
+        </div>
+        
+        <div id="overlay_form" class="overlay_form">
+        
+        <div class="contact" id="form">
+            <div class="close_container"><button class="close_button" id="close__form_button"
+                    onclick="closeForm()">X</button></div>
+            <div class="logo_container"><a href="english.html"><img src="../assets/dima_l.png" alt="" srcset=""
+                        width="150px"> </a> </div>
+            <div class="contact_item-form ">
+                <h4 style="margin-bottom:10px">Contact</h4>
+                <div class="">
+        
+                    <div class="protected-content" style="margin-bottom:10px"
+                        data-content="moc.liamg@cod.htuzimazah.olleh"></div>
+                    <div class="protected-content" style="margin-bottom:10px" data-content="11118708784+"></div>
+                </div>
+                <div class="contact_socialmedia">
+        
+                    <div><a href="https://www.facebook.com/groups/azimutdoc"><img src="../assets/fb.svg" alt=""
+                                srcset=""></a></div>
+                    <div><a href="https://www.instagram.com/azimuthdoc/"><img src="../assets/insta.svg" alt=""
+                                srcset=""></a></div>
+                </div>
+            </div>
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mknlajeg"
+                method="post">
+                <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full name</label>
+                    <input type="text" name="name" id="full-name" placeholder="" required="">
+                    <label for="email-address">E-mail</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="" required="">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Message"
+                        required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Send">
+            </form>
+            <style>
+                /* reset */
+            </style>
+        </div>
+        </div>
+
+
+
+          
 
     <script src="../js/main.js?v1"></script>
 </body>

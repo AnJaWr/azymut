@@ -42,3 +42,27 @@ containers.forEach(function (container) {
       kontakt.classList.remove('show');
       console.log("hide overlay")
     };
+
+
+    function showForm() {
+      var form = document.getElementById('overlay_form');
+      var kontakt = document.getElementById('overlay');
+   
+      var containers = document.querySelectorAll('.flip-card-3D-wrapper');   
+containers.forEach(function (container) {
+          container.classList.add("hidden_card") 
+          });
+      form.classList.add('show');
+      kontakt.classList.remove('show')
+      console.log("show overlay")
+    }
+
+    function closeForm() {
+      var form = document.getElementById('overlay_form');
+      var containers = document.querySelectorAll('.flip-card-3D-wrapper');   
+containers.forEach(function (container) {
+          container.classList.remove("hidden_card") 
+          });
+      form.classList.remove('show');
+      console.log("hide overlay")
+    };

@@ -25,6 +25,7 @@ html * {
     flex-wrap: wrap;
     justify-content:space-evenly;
     align-content: center;
+    padding: 3vh 0 10vh;
 
 }
 .card_container{
@@ -189,7 +190,8 @@ margin: 7px 15px 7px 15px;
   justify-content: right;
   position: fixed;
   top:30px;
-  right:10px
+  right:10px;
+  z-index: 3;
 
 }
 
@@ -240,7 +242,22 @@ cursor: pointer;
   transform-origin: center;
 }
 #overlay{
-  width: 100vw;
+  width: 100%;
+  height: 100vh;
+  padding:0;
+  margin:0;
+  background-color: rgba(48, 48, 48, 0.397);
+  z-index: 1000;
+  display:none;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top:0;
+  left:0;
+  overflow: hidden;
+
+}
+#overlay_form{
+  width: 100%;
   height: 100vh;
   padding:0;
   margin:0;
@@ -280,7 +297,10 @@ cursor: pointer;
 opacity: 1;
 display:flex;
 }
-
+#overlay_form.show {
+  opacity: 1;
+  display:flex;
+  }
 
 .contact_item {
 padding:20px;
@@ -338,6 +358,7 @@ width:100%;
 .contact_item p{
   margin-top: 5px;
   margin-bottom: 10px;
+  width: 100%;
 }
 .contact_info{
 width: 100%;
@@ -345,6 +366,15 @@ display: flex;
 flex-wrap: nowrap;
 justify-content: space-between;
 }
+.contact_info-form{
+  width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+
+
 .protected-content {
   direction: ltr;
   unicode-bidi: bidi-override;
@@ -359,13 +389,140 @@ color:rgb(1, 112, 191);
 .contact_socialmedia{
   display: flex;
 flex-wrap: wrap;}
+.container_lower{
+display:flex;
+width: 60%;
+}
+.container_bigger{
+display: flex;
+width: 52%
+}
+#fs-frm{
+  width: 100%;
+}
+.container_minor{
+  display: flex;
+width: 48%;
+justify-content: right;
+align-items: flex-end;
+}
+
+
+/*=====================================form==============================*/
+#fs-frm input,
+      #fs-frm select,
+      #fs-frm textarea,
+      #fs-frm fieldset,
+      #fs-frm optgroup,
+      #fs-frm label,
+      #fs-frm #card-element:disabled {
+        font-family: inherit;
+        font-size: 100%;
+        color: inherit;
+        border: none;
+        border-radius: 0;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+      #fs-frm label,
+      #fs-frm legend,
+      #fs-frm ::placeholder {
+        font-size: .825rem;
+        margin-bottom: .5rem;
+        padding-top: .2rem;
+        display: flex;
+        align-items: baseline;
+      }
+      
+      /* border, padding, margin, width */
+      #fs-frm input,
+      #fs-frm select,
+      #fs-frm textarea,
+      #fs-frm #card-element {
+        border: 1px solid rgba(0,0,0,0.2);
+        background-color: rgba(255,255,255,0.9);
+        padding: .75em 1rem;
+        margin-bottom: 1.5rem;
+      }
+      #fs-frm input:focus,
+      #fs-frm select:focus,
+      #fs-frm textarea:focus {
+        background-color: white;
+        outline-style: solid;
+        outline-width: thin;
+        outline-color: gray;
+        outline-offset: -1px;
+      }
+      #fs-frm [type="text"],
+      #fs-frm [type="email"] {
+        width: 100%;
+      }
+      #fs-frm [type="button"],
+      #fs-frm [type="submit"],
+      #fs-frm [type="reset"] {
+        width: auto;
+        cursor: pointer;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+      }
+      #fs-frm [type="button"]:focus,
+      #fs-frm [type="submit"]:focus,
+      #fs-frm [type="reset"]:focus {
+        outline: none;
+      }
+      #fs-frm [type="submit"],
+      #fs-frm [type="reset"] {
+        margin-bottom: 0;
+      }
+      #fs-frm select {
+        text-transform: none;
+      }
+      
+      #fs-frm [type="checkbox"] {
+        -webkit-appearance: checkbox;
+        -moz-appearance: checkbox;
+        appearance: checkbox;
+        display: inline-block;
+        width: auto;
+        margin: 0 .5em 0 0 !important;
+      }
+      
+      #fs-frm [type="radio"] {
+        -webkit-appearance: radio;
+        -moz-appearance: radio;
+        appearance: radio;
+      }
+      
+      /* address, locale */
+      #fs-frm fieldset.locale input[name="city"],
+      #fs-frm fieldset.locale select[name="state"],
+      #fs-frm fieldset.locale input[name="postal-code"] {
+        display: inline;
+      }
+      #fs-frm fieldset.locale input[name="city"] {
+        width: 52%;
+      }
+      #fs-frm fieldset.locale select[name="state"],
+      #fs-frm fieldset.locale input[name="postal-code"] {
+        width: 20%;
+      }
+      #fs-frm fieldset.locale input[name="city"],
+      #fs-frm fieldset.locale select[name="state"] {
+        margin-right: 3%;
+      }
 /*======================================= media ======================================= */
 
 @media (max-width: 768px) {
   .wrapper_main{
       justify-content:space-evenly;
       align-content:space-evenly;
-      min-height: 150vh
+      min-height: 150vh;
+      padding:0;
   }
     .box-half{
         width: 80%;
@@ -393,6 +550,7 @@ flex-wrap: wrap;}
   top: 3%;
   left: 2%;
   padding: 5px;
+  padding-bottom: 20px;
 }
 .menu_item{
   padding:10px;
@@ -406,6 +564,15 @@ opacity: 1;
 display:flex; 
 
 }
+#overlay_form{
+  min-height: 150vh;
+}
+#overlay_form.show {
+opacity: 1;
+display:flex; 
+
+}
+
 
 .navigation {
   top: 0;
@@ -507,7 +674,10 @@ display: none;
 
   }
   
+  .overlay_form{
+    min-height: 280vh;
 
+  }
   
       .contact{
         width: 70vw;
@@ -522,6 +692,12 @@ display: none;
         justify-content: center;
       }
       #overlay{
+        min-height: fit-content;
+        position: fixed;
+     overflow: scroll;
+    
+      }
+      #overlay_form{
         min-height: fit-content;
         position: fixed;
      overflow: scroll;
