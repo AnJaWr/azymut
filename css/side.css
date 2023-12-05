@@ -273,7 +273,7 @@ cursor: pointer;
 }
 .contact{
   background-color: #fafafa;
-  width: 65vw;
+  width: 50vw;
   height: 90vh;
   border-radius: 25px;
   padding:20px;
@@ -291,7 +291,7 @@ cursor: pointer;
   z-index: 1000;
   overflow-y:auto;}
 
-}
+
 #overlay.show {
 opacity: 1;
 display:flex;
