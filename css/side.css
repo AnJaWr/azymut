@@ -515,7 +515,40 @@ align-items: flex-end;
       #fs-frm fieldset.locale select[name="state"] {
         margin-right: 3%;
       }
-/*======================================= media ======================================= */
+
+
+
+/*-----------------------------------------priv----------------------------------------*/
+.container_privacy{
+  display: block;
+  width: 80%;
+}
+.header_privacy{
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 20px 0px
+}
+.privacy {
+  width: 33%;
+  position: absolute;
+  bottom:10px;
+  left:10px;
+  text-align: left;
+  font-size: 1em;
+
+  text-decoration: none;
+  font-family: 'Comfortaa', sans-serif;
+ 
+}
+.privacy a {
+  color:white;
+}
+      /*======================================= media ======================================= */
+
+
+
+
 
 @media (max-width: 768px) {
   .wrapper_main{
