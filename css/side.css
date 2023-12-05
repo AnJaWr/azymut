@@ -318,6 +318,7 @@ justify-content: space-evenly;
 }
 .menu_item{
 max-width: 40%;
+max-height: 4.5em;
 padding:20px;
 text-decoration: none;
 text-transform:uppercase;

@@ -217,7 +217,8 @@ width: 100%;
 
 }
 .menu_item{
-  max-width: 40%;
+  max-width: 45%;
+  max-height: 4.5em;
   padding:20px;
   text-decoration: none;
   text-transform:uppercase;
