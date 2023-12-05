@@ -75,16 +75,15 @@ background-image: url(/assets/workers.jpg);
     border-radius: 0 0 25px 25px;
 }
 .privacy {
-  width: 33%;
-  position: absolute;
-  bottom:10px;
-  left:10px;
+  width: 100%;
   text-align: left;
   font-size: 1em;
-
   text-decoration: none;
   font-family: 'Comfortaa', sans-serif;
- 
+  display:flex;
+  align-self: flex-end;
+  align-items: flex-end;
+  margin-left:30px
 }
 .privacy a {
   color:white;
@@ -514,7 +513,7 @@ display:flex;
 .card_container{
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5px;
+  margin-top: 7%;
 
 }
 .box-half--first{
