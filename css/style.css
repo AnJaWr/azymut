@@ -169,7 +169,7 @@ cursor: pointer;
 
   .contact{
     background-color: #fafafa;
-    width: 50vw;
+    width: 45vw;
     height: 90vh;
     border-radius: 25px;
     padding:20px;
@@ -491,7 +491,6 @@ width: 40%;}
 .contact{
   position: absolute;
   width: 96vw;
-  height: fit-content;
   border-radius: 25px;
   padding:7px;
   top: 3%;
