@@ -705,6 +705,13 @@ display: none;
   .contact_info{
     flex-wrap: wrap;
   }
+  .privacy{
+    position: relative;
+    width: 90%;
+    bottom:15vh;
+  }
+  
+  
 }
 
 

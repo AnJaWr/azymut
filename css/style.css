@@ -537,8 +537,13 @@ right:10px
 .contact_socialmedia{
   width: 100%;
 }
+.privacy{
+  position: relative;
+  width: 90%;
+  bottom:15vh;
 }
 
+}
 /* @media (min-width: 769px){
     .wrapper-main{
        
